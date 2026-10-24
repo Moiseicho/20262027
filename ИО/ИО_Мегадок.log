@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.4)  20 OCT 2026 16:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.4)  24 OCT 2026 18:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -479,10 +479,7 @@ LaTeX Info: Redefining \microtypesetup on input line 3065.
 tex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count321
-) (РРћ_РњРµРіР°РґРѕРє.aux
-Package babel Info: 'russian' activates 'russian' shorthands.
-(babel)             Reported on input line 5.
-)
+) (РРћ_РњРµРіР°РґРѕРє.aux)
 \openout1 = `РРћ_РњРµРіР°РґРѕРє.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -501,6 +498,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
 LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
+Package babel Info: 'russian' activates 'russian' shorthands.
+(babel)             Reported on input line 18.
 LaTeX Info: Redefining \th on input line 18.
 
 *geometry* driver: auto-detecting
@@ -683,7 +682,99 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--151
 
  []
 
-[4] (РРћ_РњРµРіР°РґРѕРє.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
+
+ []
+
+[4]
+Underfull \hbox (badness 2635) in paragraph at lines 173--174
+[]\T2A/cmr/m/n/12 Примери: Кръг, пра-воъ-гъл-ник, триъ-гъл-ник, пра-вил-ни мно-
+гоъ-гъл-ни-ци вклю-чи-тел-но
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--181
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--184
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--191
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+
+ []
+
+
+Underfull \hbox (badness 1383) in paragraph at lines 204--207
+\T2A/cmr/m/n/12 ЛЗ, след-ва, че съще-ству-ва нетри-ви-ал-на ли-ней-на им ком-би
+-на-ция, ко-я-то да-ва $\OML/cmm/m/it/12 ^^[$\T2A/cmr/m/n/12 . Нека
+ []
+
+[5] [6] (РРћ_РњРµРіР°РґРѕРє.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -692,11 +783,11 @@ L3 programming layer <2025-12-24>
 Here is how much of TeX's memory you used:
  7675 strings out of 467871
  123075 string characters out of 5418377
- 589805 words of memory out of 5000000
+ 592814 words of memory out of 5000000
  36470 multiletter control sequences out of 15000+600000
  642740 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,8n,65p,1018b,273s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,8n,65p,1141b,273s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\matei\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labi12
 00.pk> <C:\Users\matei\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\la
 ti1200.pk> <C:\Users\matei\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
@@ -716,9 +807,9 @@ b><C:/Users/matei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmsy10.pfb><C:/Users/matei/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmsy8.pfb><C:/Users/matei/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/amsfonts/symbols/msbm10.pfb>
-Output written on РРћ_РњРµРіР°РґРѕРє.pdf (4 pages, 209786 bytes).
+Output written on РРћ_РњРµРіР°РґРѕРє.pdf (6 pages, 227164 bytes).
 PDF statistics:
- 332 PDF objects out of 1000 (max. 8388607)
+ 355 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  8203 words of extra memory for PDF output out of 10000 (max. 10000000)
 

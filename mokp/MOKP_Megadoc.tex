@@ -50,8 +50,31 @@ $\varphi_j(t)$ дефинираме като отклонението на j-т�
 \end{cases}
 \]
 Съответно имаме 2 окръжности с различни обиколки $\Lambda$ и $\tilde{\Lambda}$. Имаме N на брой $\phi$ и $\tilde{\phi}$. Съответно имаме трансформация $U_n\phi = \tilde{\phi};U_n^{-1}\tilde{\phi} = \phi$ или:
-\[\phi_j = \frac{1}{\sqrt{N}}\sum_{k=0}^{N-1}e^{2\pi ijk/N}\tilde{\phi_k};\tilde{\phi_k} = \frac{1}{\sqrt{N}}\sum_{j=0}^{N-1}e^{-2\pi ijk/N}\phi_j\] 
-Нека си определим $\lambda$ и $\tilde{\lambda}$ като разстоянията между точките на съответните окръжности. Дефинираме $h = \lambda\tilde\lambda N$ и $\hbar=\frac{h}{2\pi}$. Тогава за $x=j\lambda$ и $p=k\lambda$ получаваме:
-\[e^{2\pi ijk/N} = e^{ixp/\hbar}
+\[\phi_j = \frac{1}{\sqrt{N}}\sum_{k=0}^{N-1}e^{-2\pi ijk/N}\tilde{\phi_k};\tilde{\phi_k} = \frac{1}{\sqrt{N}}\sum_{j=0}^{N-1}e^{2\pi ijk/N}\phi_j\] 
 
+
+Нека вземем произволно h положително и фиксирано. Дефинираме $\hbar=\frac{h}{2\pi}$ и фиксираме за дължините между точките $\lambda\tilde{\lambda}=\frac{h}{N}$ или $\Lambda\tilde{\lambda} = \tilde{\Lambda}\lambda=h$. Съответно ако положим $x=j\lambda$ и $p=k\tilde{\lambda}$ трансформираме горния експонент в следния вид:
+\[e^{2\pi ij/N} = e^{ipx/\hbar}\]
+
+Тогава ако разгледаме $\phi(x), x\in\{0,\lambda,2\lambda...,(N-1)\lambda\};\tilde{\phi}(p),p\in\{0,\tilde{\lambda,}2\tilde{\lambda}...,(N-1)\tilde{\lambda}\}$ можем да преобразувае трансформацията в следния вид:
+\[\phi_j=\phi(j\lambda)\sqrt{\lambda};\tilde{\phi_k}=\tilde{\phi}(k\tilde{\lambda})\sqrt{\tilde{\lambda}}\]
+\[\tilde{\phi_k} = \frac{1}{\sqrt{N}}\sum_{j=0}^{N-1}e^{2\pi ijk/N}\phi_j\Rightarrow\tilde{\phi}(p)=\frac{1}{\sqrt{h}}\sum_pe^{ixp/\hbar}\phi(x)\lambda\]
+\[\phi_j = \frac{1}{\sqrt{N}}\sum_{k=0}^{N-1}e^{-2\pi ijk/N}\tilde{\phi_k}\Rightarrow\phi(x)=\frac{1}{\sqrt{h}}\sum_pe^{-ixp/\hbar}\tilde{\phi}(p)\tilde{\lambda}\]
+
+\subsection*{Евристични гранични случаи}
+Имаме два случая когато $N\rightarrow\infty$:\\
+\begin{enumerate}
+	\item $\Lambda, \tilde{\Lambda} \rightarrow \infty, \lambda, \tilde{\lambda} \rightarrow 0.$ Тогава сумите на Риман се превръщат в интеграли:\\
+	\[\tilde{\phi}(p)=\frac{1}{\sqrt{h}}\int_{-\infty}^{+\infty}e^{ixp/\hbar}\phi(x)dx\]
+	\[\phi(x)=\frac{1}{\sqrt{h}}\int_{-\infty}^{+\infty}-e^{-ixp/\hbar}\tilde{\phi}(p)dp\]
+	\item $\Lambda-fixed, \tilde{\Lambda} \rightarrow \infty, \lambda \rightarrow 0, \tilde{\lambda} - fixed.$ Аналогично, само с един интеграл.
+\end{enumerate}
+
+\subsection*{Общо Решение}
+\[\ddot{\varphi_j}=\kappa(\varphi_{j+1}+\varphi_{j-1}-2\varphi_{j})\]
+\[\tilde{\varphi_k}=\frac{1}{\sqrt{N}}\sum_{j=0}^{N-1}e^{2\pi ijk/N}\varphi_j\]
+\[\ddot{\tilde{\varphi_k}}=\frac{\kappa}{\sqrt{N}}\sum_{j=0}^{N-1}e^{2\pi ijk/N}(\varphi_{j+1}+\varphi_{j-1}-2\varphi_{j})\]
+Сумата е циклична, съответно:
+\[\ddot{\tilde{\varphi_k}}=\frac{\kappa}{\sqrt{N}}(e^{2\pi ik/N}+e^{-2\pi ik/N}-2)\sum_{j=0}^{N-1}e^{2\pi ijk/N}\varphi_{j}=\kappa(e^{2\pi ik/N}+e^{-2\pi ik/N}-2)\tilde{\phi_k}\]
+Ако положим $\omega_k^2=-\kappa(e^{2\pi ik/N}+e^{-2\pi ik/N}-2)$, получаваме уравнение от вида $\ddot{\tilde{\varphi_k}}=-\omega_k^2\tilde{\varphi_k}$, което има следното комлексно решение:$\tilde{\phi_k}=A_k^+e^{i\omega t}+A_k^-e^{-i\omega t}$
 \end{document}

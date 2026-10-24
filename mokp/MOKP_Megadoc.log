@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.4)  17 OCT 2026 16:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.4)  24 OCT 2026 17:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -647,21 +647,31 @@ Package pdftex.def Info: images/complex.png  used on input line 42.
 
 {C:/Users/matei/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./images/cir
 cle.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
+[2 <./images/complex.png>]
 
 Package caption Warning: Unused \captionsetup[figure] on input line 13.
 See the caption package documentation for explanation.
 
-[2 <./images/complex.png>] (MOKP_Megadoc.aux)
+[3] (MOKP_Megadoc.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 9009 strings out of 467871
- 149014 string characters out of 5418377
- 609391 words of memory out of 5000000
- 37799 multiletter control sequences out of 15000+600000
+ 9011 strings out of 467871
+ 149076 string characters out of 5418377
+ 616391 words of memory out of 5000000
+ 37801 multiletter control sequences out of 15000+600000
  639824 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,8n,65p,1011b,266s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -683,9 +693,9 @@ y10.pfb><C:/Users/matei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmsy6.pfb><C:/Users/matei/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmsy8.pfb><C:/Users/matei/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/amsfonts/symbols/msbm10.pfb>
-Output written on MOKP_Megadoc.pdf (2 pages, 185999 bytes).
+Output written on MOKP_Megadoc.pdf (3 pages, 197902 bytes).
 PDF statistics:
- 184 PDF objects out of 1000 (max. 8388607)
+ 199 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6155 words of extra memory for PDF output out of 10000 (max. 10000000)
 
