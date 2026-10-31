@@ -1,0 +1,30 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{blindtext}
+\usepackage[none]{hyphenat}
+\usepackage[expansion=false]{microtype}
+\usepackage{caption}
+\usepackage{indentfirst}
+\captionsetup[figure]{name=Фиг.}
+\emergencystretch=3em
+\def\D{\mathbb}
+\graphicspath{{images/}}
+
+\title{Многомерни статистически модели}
+\author{Матей Захариев}
+\date{}
+\begin{document}
+
+\maketitle
+
+\section*{06.10.2026}
+Имаме данни за $p\geq1$ характеристики (променливи), като събираме по n на брой данни. Съответно получаваме матрица $\D{X}$ с  размерност $p\times n$. По редове имаме item, data, или unit, а по колони - $\vec{Y_i}$ вектор на данни за дадена променлива. Дефинираме $\overline{X_{*i}}$ - средно за i-ти стълб и аналогично $\overline{X_{i*}}$ средно за i-ти ред. Подобно дефинираме $S_{ii} = \hat{Var}(\vec{Y_i})=\frac{1}{n}\sum_{j=1}^{n}(X_{ji}-\overline{X_{*i}})^2$ и аналогично $S_{ij}=\hat{Cov}(\vec{Y_i}, \vec{Y_j})$. Ако е казано да използваме неизместена оценка, делим на $n-1$ вместо на $n$. Съответно дефинираме ковариационна матрица $\D{S}$. Съответно може и да се дефинира корелационна матрица $\D{R}$ с корелацията вместо коварияция.\\
+Ще дефинираме няколко нови понятия. Първо, за един вектор $\vec{X}$, $L_{\vec{X}}=\sqrt{\vec{X}'\vec{X}}$. Нека между два вектора да имаме ъгъл $\theta$. Тогава $cos\theta=\frac{\vec{X}'\vec{Y}}{L_{\vec{X}}L_{\vec{Y}}}$ (има обяснение как, но е само за $\D{R}$ и е stinky poopy частно, което не ме кефи.) Проекция на $\vec{X}$ върху $\vec{Y}$ се изразява като $\frac{\vec{X}'\vec{Y}}{\vec{Y}'\vec{Y}}\vec{Y}$\\
+Ако си вземем единичен вектор $\vec{1}_n$ с размерност $1\times n$ с единици, можем да проектираме вектор на променлива върху него: $\Pi_p=\frac{\vec{Y}_i'\vec{1}_n}{\vec{1}_n'\vec{1}_n}\vec{1}_n=\left(\frac{1}{n}\sum_{k=1}^{n}x_ki\right)\vec{1}_n=\overline{X_{*i}}\vec{1}_n$. Дефинираме $\vec{d_i}=\vec{Y}_i-\overline{X_{*i}}\vec{1}_n$ - deviation vector, вектор на отклонение. Този вектор се вижда, че $L_{\vec{d_i}}=\vec{d_i}'\vec{d_i}=nS_ii$ ($n-1$ ако работим с неизместена оценка.) Ако разгледаме $ \vec{d_i}'\vec{d_j} = nS_{ij}=\sqrt{L_{\vec{d_i}}L_{\vec{d_j}}}cos(\vec{d_i},\vec{d_j})=n\sqrt{S_{ii}S_{jj}}cos(\vec{d_i},\vec{d_j})$, можем да видим, че $cos(\vec{d_i},\vec{d_j})=r_{ij}$
+
+\end{document}
