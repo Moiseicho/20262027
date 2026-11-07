@@ -77,4 +77,25 @@ $\varphi_j(t)$ дефинираме като отклонението на j-т�
 Сумата е циклична, съответно:
 \[\ddot{\tilde{\varphi_k}}=\frac{\kappa}{\sqrt{N}}(e^{2\pi ik/N}+e^{-2\pi ik/N}-2)\sum_{j=0}^{N-1}e^{2\pi ijk/N}\varphi_{j}=\kappa(e^{2\pi ik/N}+e^{-2\pi ik/N}-2)\tilde{\phi_k}\]
 Ако положим $\omega_k^2=-\kappa(e^{2\pi ik/N}+e^{-2\pi ik/N}-2)$, получаваме уравнение от вида $\ddot{\tilde{\varphi_k}}=-\omega_k^2\tilde{\varphi_k}$, което има следното комлексно решение:$\tilde{\phi_k}=A_k^+e^{i\omega t}+A_k^-e^{-i\omega t}$
+
+{\centering\section*{22.10.2026}}
+\subsection*{Дискретен анализ}
+Разглеждаме дискретна производна: $\partial^+_x f(x)=\frac{f(x_+)-f(x)}{\lambda}$; $\partial^-_x f(x)=\frac{f(x)-f(x_-)}{\lambda}$;\\
+Свойства:\\
+\indent а) Линейност: $\partial^\pm_x(af(x)+bg(x))=a\partial^\pm_xf(x)+b\partial^\pm_xg(x))$;\\
+\indent б) Дискретно правило на Лайбниц: $\partial^\pm_x(fg(x))=\partial^\pm_x(f(x))g(x_\pm)+\partial^\pm_x(g(x))f(x)$;\\
+\indent в) $\partial^+_xf(x_-)=\partial^-_xf(x_+)$;\\
+
+Дискретен интеграл - риманова сума.\\
+Свойства:\\
+\indent а) Линейност\\
+\indent б) $\int_x\partial^\pm_xf(x)=0$, заради цикличност\\
+От последните и Лайбниц за производната можем да направим следния извод:\\
+$0 = \int_x\partial^\pm_x(fg(x))= \int_x(\partial^\pm_x(f(x))g(x_\pm)+\partial^\pm_x(g(x))f(x))\Rightarrow\int_+g(x_\pm)\partial^\pm_x(f(x))=-\int_+f(x)\partial^\pm_x(g(x))$
+\indent в) Цикличност: $\int_+f(x)=\int_+f(x_\pm)$\\
+
+Допълнителни коментари: При смятане без цикличност $\partial_x x^n=nx^n-1$. Дефинираме $x^{[n]} = x(x-\lambda)...(x-(n-1)\lambda)$. Съответно $\partial_x^+ x^{[n]}=\frac{x_+^{[n]}-x^{[n]}}{\lambda}=\frac{(x(x-\lambda)...(x-(n-2)\lambda))(x+\lambda-x+(n-1)\lambda)}{\lambda}=nx^{[n-1]}$. Аналогично се вижда $\partial_x^-x^{[n]}=x_-^{[n]}$\\
+
+
+
 \end{document}

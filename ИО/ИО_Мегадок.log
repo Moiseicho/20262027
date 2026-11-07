@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.4)  24 OCT 2026 18:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.4)  7 NOV 2026 22:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -479,7 +479,10 @@ LaTeX Info: Redefining \microtypesetup on input line 3065.
 tex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count321
-) (ИО_Мегадок.aux)
+) (ИО_Мегадок.aux
+Package babel Info: 'russian' activates 'russian' shorthands.
+(babel)             Reported on input line 5.
+)
 \openout1 = `ИО_Мегадок.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -498,8 +501,6 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
 LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
-Package babel Info: 'russian' activates 'russian' shorthands.
-(babel)             Reported on input line 18.
 LaTeX Info: Redefining \th on input line 18.
 
 *geometry* driver: auto-detecting
@@ -774,7 +775,32 @@ Underfull \hbox (badness 1383) in paragraph at lines 204--207
 -��-���, ��-�-�� ��-�� $\OML/cmm/m/it/12 ^^[$\T2A/cmr/m/n/12 . ����
  []
 
-[5] [6] (ИО_Мегадок.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--207
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 210--216
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--222
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
+
+ []
+
+[6] [7] (ИО_Мегадок.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -783,7 +809,7 @@ L3 programming layer <2025-12-24>
 Here is how much of TeX's memory you used:
  7675 strings out of 467871
  123075 string characters out of 5418377
- 592814 words of memory out of 5000000
+ 595805 words of memory out of 5000000
  36470 multiletter control sequences out of 15000+600000
  642740 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -800,16 +826,17 @@ ljfour/lh/lh-t2a/dpi600\larm1440.pk> <C:\Users\matei\AppData\Local\MiKTeX\fonts
 /pk/ljfour/lh/lh-t2a/dpi600\larm2074.pk><C:/Users/matei/AppData/Local/Programs/
 MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/matei/AppData/Local/
 Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/matei/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/mat
-ei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/U
-sers/matei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pf
-b><C:/Users/matei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb><C:/Users/matei/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmsy8.pfb><C:/Users/matei/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/symbols/msbm10.pfb>
-Output written on ИО_Мегадок.pdf (6 pages, 227164 bytes).
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/mat
+ei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/U
+sers/matei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.p
+fb><C:/Users/matei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmr8.pfb><C:/Users/matei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb><C:/Users/matei/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmsy8.pfb><C:/Users/matei/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on ИО_Мегадок.pdf (7 pages, 246786 bytes).
 PDF statistics:
- 355 PDF objects out of 1000 (max. 8388607)
+ 372 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  8203 words of extra memory for PDF output out of 10000 (max. 10000000)
 
