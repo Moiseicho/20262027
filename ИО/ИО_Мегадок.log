@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.4)  7 NOV 2026 22:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.4)  13 NOV 2026 16:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -800,7 +800,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
 
-[6] [7] (РРћ_РњРµРіР°РґРѕРє.aux)
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--250
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--259
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--261
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--264
+
+ []
+
+[7]
+Underfull \hbox (badness 1314) in paragraph at lines 271--272
+[]\T2A/cmr/m/n/12 Фаза 1: Из-би-ра-ме връх по го-ре-по-со-че-ни-те кри-те-рии. 
+Пред-ста-вя-ме си за-да-ча-та в
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
+
+ []
+
+[8] (РРћ_РњРµРіР°РґРѕРє.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -834,9 +880,9 @@ fb><C:/Users/matei/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 onts/cm/cmsy10.pfb><C:/Users/matei/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/amsfonts/cm/cmsy8.pfb><C:/Users/matei/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on РРћ_РњРµРіР°РґРѕРє.pdf (7 pages, 246786 bytes).
+Output written on РРћ_РњРµРіР°РґРѕРє.pdf (8 pages, 259049 bytes).
 PDF statistics:
- 372 PDF objects out of 1000 (max. 8388607)
+ 384 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  8203 words of extra memory for PDF output out of 10000 (max. 10000000)
 
