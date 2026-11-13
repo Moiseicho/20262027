@@ -265,7 +265,7 @@ $\Rightarrow)$ Всяко $x\in M$ може да се представи във 
 \textbf{Теорема 2.} Ако $M\ne\emptyset$, то или z(x) е неограничена отдолу, или достига минимума си във връх.\\
 \textbf{Доказателство:} Ще разгледаме два случая. Ако $\exists d\ne\sigma, c^Td<0$, където d е посока, то z(x) е неограничена, защото $z(x+dt) = c^Tx +t c^Td \rightarrow -\infty$ за $t\rightarrow\infty$. Иначе, ако $\forall d, c^Td\geq0$, по същата логика z(x) е ограничена. Нека допуснем, че минимум не се достига във връх. Тогава $\exists x, c^Tx<c^T\overline{x_i}$ за $i\in I$. Но от теорема за представянето $x=\sum_{i\in I}\lambda_i\overline{x_i}>\sum_{i\in I}\lambda_ix=x$ противоречие. Съответно минимум се достига в поне един връх и освен това, всяко x, за което се достига минимум може да се представи като изпъкнала комбинация на върхове, в които се достига минимум + посока, за която $c^Td = 0$
 
-\section*{12.11.2026}
+{\centering\section*{12.11.2026}}
 \subsection*{Симплекс метод}
 \begin{enumerate}
 	\item Фаза 1: Избираме връх по горепосочените критерии. Представяме си задачата в \underline{базисен вид} спрямо този връх.
@@ -275,5 +275,45 @@ $\Rightarrow)$ Всяко $x\in M$ може да се представи във 
 
 \underline{Базисен вид на оптимизационна задача:} Нека имаме текущ връх $\overline{x}$ със съответна базисна матрица B. Този връх има неотрицателни координати само спрямо съответните редове на A, които съставят B. Съответно ако разделим на базисни и не базисни кординати имаме следното представяне:
 \[\overline{x}=\begin{bmatrix}B^{-1}b\\ \sigma\end{bmatrix}=\begin{bmatrix}\overline{x}_B\\ \overline{x}_N\end{bmatrix}; A=[B|N]\]
-\[Ax=b\Rightarrow[B|N]\begin{bmatrix}x_B\\ x_N\end{bmatrix}=b\Rightarrow Bx_B+Nx_N=b\Rightarrow x_B=B^{-1}b-B^{-1}Nx_N\]
+\[Ax=b\Rightarrow[B|N]\begin{bmatrix}x_B\\ x_N\end{bmatrix}=b\Rightarrow Bx_B+Nx_N=b\Rightarrow x_B=B^{-1}b-B^{-1}Nx_N=\overline{x_B}-B^{-1}Nx_N\]
+Съответно можем да представим $x = \begin{bmatrix}x_B\\ x_N\end{bmatrix} = \begin{bmatrix}\overline{x_B}-B^{-1}Nx_N\\ x_N\end{bmatrix}=\overline{x}+\begin{bmatrix}-B^{-1}Nx_N\\ x_N\end{bmatrix}$\\
+Нека разгледаме последното на колони. Дефинираме си $d_j=\begin{bmatrix}-B^{-1}A_j\\ e_j\end{bmatrix}$ за $j\in N$. Тогава горното се представя като $x=\overline{x}+\sum_{j\in N} x_j d_j$. От тук можем вече да представим и останалата задача по подобен начин. В крайна сметка получаваме базисен вид на задачата:
+\[
+\left|
+\begin{array}{l}
+z(x)=c^T\overline{x}+\sum_{j\in N}x_jc^Td_j\\
+x=\overline{x}+\sum_{j\in N}x_jd_j\\
+x\geq\sigma
+\end{array}
+\right.
+\]
+$d_j$ наричаме направление по ръбовете на $\overline{x}$. Това е вектор описващ посоките на ръбовете излизащи от текущия връх.
+$c^Td_j=\overline{c_j}$ наричаме относителна оценка, която ни дава изменението на z по направление $d_j$.\\
+$\overline{c_j} = c_j-c_B^TB^{-1}A_j$\\
+$\overline{c_i} = c_i-c_B^TB^{-1}A_i=c_i-c_b^Te_i=c_i-c_i=0$\\
+Нека разгледаме следните уравнения, които $\overline{x}$ удовлетворява: $a_1^Tx=b_1, a_2^Tx=b_2,...a_m^Tx=b_m$ след което, защото $\overline{x_N}=\sigma$ имаме $e_{m+1}^Tx=0,... e_n^Tx=0$. Ако си построим матрицата на тази система получаваме: $\D{M}=\left[\begin{array}{c|c}B & N \\ \hline \sigma & I \end{array}\right]$. Защото B и I са неособени и седят по диагонала $\D{M}$ e $n\times n$ неособена. Съответно има едно единствено решение, което е $\overline{x}$. Това е точката в която тези n-мерни хиперравнини се пресичат. Какво става обаче, ако отпуснем едно от уравненията с нула. Нека фиксираме $q\in N$ и разгледаме: 
+\[\D{M}d_q = \left[\begin{array}{c|c}B & N \\ \hline \sigma & I \end{array}\right]\begin{bmatrix}-B^{-1}A_q\\ e_q\end{bmatrix}=\begin{bmatrix}-A_q+A_q\\ e_q\end{bmatrix}=\begin{bmatrix}\sigma\\ e_q\end{bmatrix}\].
+Съответно по това направление се променя само координатата q. Така получаваме права, определена от $\overline{x}$ и направлението $d_q$, сечение на всички горепосочени хиперравнини без дефинираната от $e_qx=0$. Точките на тази права се представят като $x = \overline{x} + td_q$. От начало се вижда, че $t \geq 0 $, защото $\overline{x_q}=0$, a $d_{qq}$(q-та координата на $d_q$) е 1. Изведохме го от матрицата, но нека пак проверим за да припомним:
+\[Ax = A(\overline{x}+td_q) = A\overline{x} + tAd_q = b+t[B|N]\begin{bmatrix}-B^{-1}A_q\\ e_q\end{bmatrix} = b+t\sigma=b\]
+Остава да видим за кои t, $x\geq\sigma$. Имаме три случая:
+Нека положим $w_q=B^{-1}A_q$ и $w_{iq}$ е i-тата координата. Тогава $x = \begin{bmatrix}\overline{x_B}\\ \sigma\end{bmatrix}-\begin{bmatrix}-w_q\\ e_q\end{bmatrix}$. Съответно имаме горна граница $\overline{t} = min_{w_iq>0}(\frac{\overline{x_{ib}}}{w_{iq}})$, a ако $w_q\leq\sigma$, тогава $\overline{t}=+\infty$.
+\begin{enumerate}
+	\item $\overline{t} = 0$ - тогава единствената точка, за която $x\geq\sigma$ e $\overline{x}$. Наричаме фиктивен ръб. Случва се, когато някоя от базисните координати е нула и съответната координата в $w_q$ е положителна. Съответно е възможно само в изродени върхове.
+	\item $\overline{t}$ крайно - имаме отсечка, по която можем да достигнем друг връх $x = \overline{x}+\overline{t}d_q$. Действителен ограничен ръб
+	\item $\overline{t}$ безкрайно - имаме лъч с начало $\overline{x}$. Действителен неограничен ръб.
+\end{enumerate}
+
+Съответно промените на z(x) спрямо тези направления се описват от $\overline{c_q}$. Ако $\overline{c_q} > 0$, то функцията расте, ако $\overline{c_q} < 0$ - намалява и ако $\overline{c_q} = 0$ не се променя.\\
+
+Разглеждаме двата критерии от началото:
+
+\underline{Критерии за оптималност.} Ако $\overline{x}$ е базисно допустимо решение и $\overline{c_j}\geq0; \forall j\in N$, то $\overline{x}$ е оптимален.\\
+Доказателство: $z(x) = z(\overline{x}) + \sum_{j\in N}x_jc_j\geq z(\overline{x})$\\
+Следствие: Ако неравенството е строго за всички, то $\overline{x}$ е единствено оптимално решение.\\
+Забележка: Обратното не е вярно, възможно е $\overline{x}$ да е единствено, но да има фиктивен ръб, за чието направление $\overline{c_q} \leq 0$\\
+Следствие: За $\overline{c_{j_1}} = ... = \overline{c_{j_k}} = 0$, всяка точка от вида $x = \overline{x} + \sum_{i=1}^k x_{j_i}d_{j_i}$ е оптимално решение.\\
+
+\underline{Критерии за неограниченост.} Ако $\overline{x}$ е базисно допустимо решение и $\exists \omega_q\leq\sigma$, за който $\overline{c_q}<0$, то z(x) е неограничено отдолу.
+Доказателство: В горния случай $d_q$ е посока и следва от теорема 2 от миналия път.
+
 \end{document}
